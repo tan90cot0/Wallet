@@ -35,13 +35,13 @@ import {
 import { encryptDetails, SHIFT_AMOUNT, SPACE_CHAR } from '../utils/encryptionUtils';
 
 const AddCardScreen = ({ navigation }) => {
-  // Form state with test data for easier testing
-  const [bankName, setBankName] = useState('DBS');
-  const [cardNumber, setCardNumber] = useState('4335 8788 7420 0907');
-  const [cardholderName, setCardholderName] = useState('Aryan Test');
-  const [expiryDate, setExpiryDate] = useState('12/28');
-  const [cvv, setCvv] = useState('123');
-  const [pin, setPin] = useState('1234');
+  // Form state - removed test data for production
+  const [bankName, setBankName] = useState('');
+  const [cardNumber, setCardNumber] = useState('');
+  const [cardholderName, setCardholderName] = useState('');
+  const [expiryDate, setExpiryDate] = useState('');
+  const [cvv, setCvv] = useState('');
+  const [pin, setPin] = useState('');
   
   // UI state
   const [loading, setLoading] = useState(false);
